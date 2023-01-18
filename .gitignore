@@ -1,2 +1,7 @@
 target/
 .apt_generated_tests/
+.settings/
+.DS_Store
+.classpath
+.factorypath
+.project
