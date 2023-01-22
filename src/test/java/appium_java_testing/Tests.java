@@ -17,12 +17,18 @@ public class Tests {
 	@BeforeTest
 	public void setup() {
 		
+		
+		final String url = "http://127.0.0.1:4723/wd/hub";
+
+		URL Url = new URL (url);
+		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion", "11");
-		capabilities.setCapability("appPackage", "com.example.new_sample");
-		capabilities.setCapability("appActivity", "com.example.new_sample.MainActivity");
-		driver = new AppiumDriver(capabilities);
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+//		capabilities.setCapability(MobileCapabilityType.APP, "com.example.new_sample");
+//		capabilities.setCapability("appActivity", "com.example.new_sample.MainActivity");
+		driver = new AppiumDriver(Url, capabilities);
 		
 	}
 	
