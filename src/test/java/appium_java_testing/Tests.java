@@ -7,6 +7,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.net.URL;
+
 import io.appium.java_client.AppiumDriver;
 
 public class Tests {
