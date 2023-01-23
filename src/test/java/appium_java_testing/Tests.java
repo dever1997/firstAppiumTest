@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.net.URL;
+import java.net.*;
 
 import io.appium.java_client.AppiumDriver;
 
@@ -17,7 +17,7 @@ public class Tests {
 	AppiumDriver driver;
 	
 	@BeforeTest
-	public void setup() {
+	public void setup() throws MalformedURLException {
 		
 		
 		final String url = "http://127.0.0.1:4723/wd/hub";
